@@ -36,6 +36,7 @@ export class LoginComponent {
   }
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action, {
+      duration: 2000,
       verticalPosition: 'top',
     });
   }
@@ -44,9 +45,7 @@ export class LoginComponent {
     this._snackBar.open(
       'Usuario: master@lemoncode.net -- Contraseña: 12345678',
       '',
-      {
-        verticalPosition: 'top',
-      }
+      { duration: 2000, verticalPosition: 'top' }
     );
   }
 
